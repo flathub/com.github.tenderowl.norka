@@ -78,8 +78,6 @@
         "python3-markdown2.json",
         "python3-requests.json",
         "python3-htmldocx.json",
-        "elementary-stylesheet.json",
-        "elementary-icons.json",
         {
             "name": "norka",
             "builddir": true,

@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
     "runtime-version": "44",
-    "command": "norka",
+    "command": "com.github.tenderowl.norka",
     "finish-args": [
         "--share=network",
         "--share=ipc",

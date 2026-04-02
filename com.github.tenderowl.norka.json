@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.tenderowl.norka",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "norka",
     "finish-args": [
@@ -16,11 +16,10 @@
     "cleanup": [
         "/include",
         "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
+        "/share/gir-1.0",
         "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
+        "/share/vala",
+        "/testing",
         "*.la",
         "*.a"
     ],
@@ -31,9 +30,9 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/elementary/granite.git",
-                    "tag": "6.2.0"
+                    "type": "archive",
+                    "url": "https://github.com/elementary/granite/archive/6.2.0.tar.gz",
+                    "sha256": "067d31445da9808a802fca523630c3e4b84d2d7c78ae547ced017cb7f3b9c6b5"
                 }
             ]
         },
@@ -42,9 +41,9 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/gtksourceview.git",
-                    "tag" : "4.8.4"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz",
+                    "sha256" : "7ec9d18fb283d1f84a3a3eff3b7a72b09a10c9c006597b3fbabbb5958420a87d"
                 }
             ]
         },
@@ -52,12 +51,13 @@
             "name" : "gspell",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/otrocodigo/gspell.git",
-                    "tag" : "1.11.1"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gspell/1.11/gspell-1.11.1.tar.xz",
+                    "sha256": "ef6aa4e3f711775158a7e241a5f809cf2426bc0e02c23a7d2b5c71fc3de00292"
                 }
             ]
         },
+        "python3-lxml.json",
         "python3-markdown2.json",
         "python3-requests.json",
         "python3-htmldocx.json",
@@ -67,9 +67,9 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/TenderOwl/Norka.git",
-                    "tag": "1.1.0"
+                    "type": "archive",
+                    "url": "https://github.com/TenderOwl/Norka/archive/1.1.0.tar.gz",
+                    "sha256": "b9b0098eb42a82db8e1e696006412056e64d0ae826d0c97c328aeb05e65202dc"
                 }
             ]
         }

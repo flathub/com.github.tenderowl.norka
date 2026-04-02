@@ -1,0 +1,18 @@
+{
+    "//note": "Copied from: https://github.com/flathub/org.gnome.OCRFeeder/blob/master/python3-lxml.yaml",
+    "name": "python3-lxml",
+    "buildsystem": "simple",
+    "build-options": {
+        "cflags": "-fpermissive"
+    },
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/ea/e2/3834472e7f18801e67a3cd6f3c203a5456d6f7f903cfb9a990e62098a2f3/lxml-5.2.1.tar.gz",
+            "sha256": "3f7765e69bbce0906a7c74d5fe46d2c7a7596147318dbc08e4a2431f3060e306"
+        }
+    ],
+    "build-commands": [
+        "pip3 install --ignore-installed --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} --no-build-isolation lxml"
+    ]
+}
